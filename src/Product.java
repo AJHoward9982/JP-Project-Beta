@@ -23,35 +23,29 @@ class Product implements Item, Comparable<Item> {
     currentProductionNumber = number;
   }
 
-  ;
-
   //  A method setName, String parameter
   public void setName(String newName) {
     this.name = newName;
   }
 
-  ;
 
   //  A method getName, return a String
   public String getName() {
     return this.name;
   }
 
-  ;
 
   //  A method getManufactureDate, return a Date
   public Date getManufactureDate() {
     return this.manufacuredOn;
   }
 
-  ;
 
   //  A method getSerialNumber, return an int
   public int getSerialNumber() {
     return this.serialNumber;
   }
 
-  ;
 
   public Product(String newName) {
     manufacturer = Item.manufacturer;
