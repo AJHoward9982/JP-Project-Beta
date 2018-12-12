@@ -1,7 +1,6 @@
 /**
  * Andrew Howard
  */
-
 public interface MultimediaControl {
 
   public void play();

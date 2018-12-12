@@ -5,6 +5,7 @@ import java.util.*;
  *
  * Shows use of List to add and sort elements of type Product
  */
+/*
 public class JavaCollectionsTest {
 
   public static void main(String[] args) {
@@ -43,3 +44,4 @@ public class JavaCollectionsTest {
   }
 
 }
+*/

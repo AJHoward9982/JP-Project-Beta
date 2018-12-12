@@ -13,40 +13,66 @@ class Product implements Item, Comparable<Item> {
   Date manufacuredOn;
   String name;
 
-  //Add an integer class variable called currentProductionNumber. This will store the next number to be
-  //assigned to serialNumber.
+  /**
+   * Add an integer class variable called currentProductionNumber. This will store the next number to be
+   * assigned to serialNumber.
+   */
   private static int currentProductionNumber = 1;
 
 
-  //  A method setProductionNumber, one integer parameter
+  /**
+   * A Setter method setProductionNumber
+   *
+   * @param number production number
+   */
   public void setProductionNumber(int number) {
     currentProductionNumber = number;
   }
 
-  //  A method setName, String parameter
+  /**
+   * A Setter method setName
+   *
+   * @param newName Product name
+   */
   public void setName(String newName) {
     this.name = newName;
   }
 
 
-  //  A method getName, return a String
+  /**
+   * A Getter method getName
+   *
+   * @return String Name
+   */
   public String getName() {
     return this.name;
   }
 
 
-  //  A method getManufactureDate, return a Date
+  /**
+   * A Getter method getManufactureDate
+   * @return Manufacture Date
+   */
   public Date getManufactureDate() {
     return this.manufacuredOn;
   }
 
 
-  //  A method getSerialNumber, return an int
+  /**
+   * A Getter method getSerialNumber
+   *
+   * @return Serial Number
+   */
   public int getSerialNumber() {
     return this.serialNumber;
   }
 
 
+  /**
+   * Constructor for product that takes in a Name String
+   *
+   * @param newName Product Name
+   */
   public Product(String newName) {
     manufacturer = Item.manufacturer;
     this.name = newName;
@@ -54,15 +80,27 @@ class Product implements Item, Comparable<Item> {
     manufacuredOn = new Date();
   }
 
+  /**
+   * Formatted toString() method
+   *
+   * @return Manufacturer , Serial Number , Date , Name
+   */
   public String toString() {
     return "Manufacturer :" + this.manufacturer + "\n" + "Serial Number :" + this.serialNumber
         + "\n" + "Date :" + getManufactureDate() + "\n" + "Name :" + getName();
   }
 
-  @Override
+  /**
+   * Compares the products' name
+   *
+   * @param o
+   * @return Int
+   */
   public int compareTo(Item o) {
     return name.compareTo(o.getName());
   }
+
+
 
   /* Test Driver */
   /*public static void main(String[] args) {

@@ -4,7 +4,6 @@ import java.util.Date;
 /**
  * Andrew Howard Defines classes to be used for Items Implemented by Product
  */
-
 public interface Item {
 
   //  A constant called manufacturer that would be set to “OracleProduction”.

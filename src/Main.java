@@ -56,8 +56,8 @@ public class Main {
   // Complete the header for the testCollection method here
 
   public static ArrayList testCollection() {
-    AudioPlayer a1 = new AudioPlayer("iPod Mini","MP3");
-    AudioPlayer a2 = new AudioPlayer("Walkman","WAV ");
+    AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
+    AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
     MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
         new Screen(" 720x480", 40, 22), MonitorType.LCD);
     MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",
